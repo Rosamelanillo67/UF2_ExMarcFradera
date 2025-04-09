@@ -10,7 +10,7 @@ exports.getAlumnoConNota10 = async (req, res) => {
     });
 
     if (!alumnoConNota10) {
-      return res.status(404).json({ message: 'No se encontró ningún alumno con nota 10.' });
+      return res.status(404).json({ message: 'No se encontró ningún alumno con nota 10' });
     }
 
     return res.status(200).json(alumnoConNota10);
